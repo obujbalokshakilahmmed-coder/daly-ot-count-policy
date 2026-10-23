@@ -6,13 +6,13 @@
     <title>Privacy Policy - Daly Ot Count</title>
     <style>
         :root {
-            --primary-glow: #76FF03;
-            --secondary-glow: #DF81FF;
-            --dark-card: #1E1E1E;
-            --border-color: #000000;
-            --bg-color: #0B0B0C;
-            --text-main: #E0E0E0;
-            --text-muted: #A0A0A5;
+            --primary-color: #FF6F00; /* প্রফেশনাল অরেঞ্জ থিম */
+            --secondary-color: #2196F3; /* ক্লিকল্যাব অ্যাক্সেন্ট ব্লু */
+            --light-card: #FFFFFF;
+            --border-color: #E0E0E0;
+            --bg-color: #F8F9FA; /* সফট মডার্ন লাইট ব্যাকগ্রাউন্ড */
+            --text-main: #212121;
+            --text-muted: #555555;
         }
 
         body {
@@ -22,83 +22,80 @@
             background-color: var(--bg-color);
             margin: 0;
             padding: 0;
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(118, 255, 3, 0.03) 0%, transparent 40%),
-                radial-gradient(circle at 90% 80%, rgba(223, 129, 255, 0.03) 0%, transparent 40%);
-            background-attachment: fixed;
         }
 
         .container {
             max-width: 820px;
-            margin: 60px auto;
-            background: var(--dark-card);
-            padding: 50px;
-            border-radius: 24px;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
-            border: 2.5dp solid var(--border-color);
+            margin: 50px auto;
+            background: var(--light-card);
+            padding: 45px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
             position: relative;
             overflow: hidden;
         }
 
-        /* রাজকীয় মেটেরিয়াল ৩ টপ গ্লো লাইন */
+        /* প্রফেশনাল টপ কালার লাইন */
         .container::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            height: 5px;
-            background: linear-gradient(90deg, var(--primary-glow), var(--secondary-glow));
+            height: 6px;
+            background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
         }
 
         h1 {
-            color: #FFFFFF;
-            font-size: 32px;
+            color: #111111;
+            font-size: 30px;
             margin-bottom: 8px;
             font-weight: 800;
-            letter-spacing: -0.03em;
+            letter-spacing: -0.02em;
         }
 
         .date {
-            color: var(--primary-glow);
+            color: var(--primary-color);
             font-size: 14px;
             font-weight: 600;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.05em;
             display: inline-block;
-            border-bottom: 1px dashed rgba(118, 255, 3, 0.3);
+            border-bottom: 1.5px dashed var(--primary-color);
             padding-bottom: 4px;
         }
 
         h2 {
-            color: #FFFFFF;
-            font-size: 22px;
-            margin-top: 40px;
-            margin-bottom: 16px;
+            color: #111111;
+            font-size: 20px;
+            margin-top: 35px;
+            margin-bottom: 14px;
             font-weight: 700;
-            letter-spacing: -0.02em;
             display: flex;
             align-items: center;
+            border-bottom: 2px solid #F0F0F0;
+            padding-bottom: 6px;
         }
 
         h2::before {
             content: '▪';
-            color: var(--secondary-glow);
+            color: var(--primary-color);
             margin-right: 10px;
-            font-size: 24px;
+            font-size: 22px;
         }
 
         h3 {
-            color: var(--secondary-glow);
+            color: var(--secondary-color);
             font-size: 16px;
-            margin-top: 20px;
+            margin-top: 18px;
             margin-bottom: 8px;
             font-weight: 600;
         }
 
         p, li {
-            font-size: 15.5px;
+            font-size: 15px;
             color: var(--text-muted);
             text-align: justify;
         }
@@ -109,63 +106,74 @@
         }
 
         li {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         li::marker {
-            color: var(--primary-glow);
+            color: var(--primary-color);
         }
 
         .highlight {
             font-weight: 700;
-            color: #FFFFFF;
-            box-shadow: inset 0 -2px 0 rgba(118, 255, 3, 0.2);
+            color: #111111;
         }
 
+        /* ---------------------------------------------------- */
+        /* 🎯 [AdMob স্পেশাল আলাদা কার্ড বক্স] */
+        /* ---------------------------------------------------- */
+        .admob-policy-box {
+            background-color: #FFF8E1; /* হালকা ওয়ার্ম ব্যাকগ্রাউন্ড */
+            border: 1px solid #FFE082;
+            border-left: 5px solid #FFB300;
+            padding: 22px;
+            border-radius: 12px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        /* ---------------------------------------------------- */
+
         .contact-info {
-            background: linear-gradient(135deg, #252528 0%, #1A1A1C 100%);
-            padding: 30px;
-            border-radius: 16px;
+            background: #F1F3F5;
+            padding: 25px;
+            border-radius: 12px;
             margin-top: 30px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            border-left: 4px solid var(--primary-glow);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            border: 1px solid #E9ECEF;
+            border-left: 4px solid var(--primary-color);
         }
 
         .contact-info strong {
-            color: #FFFFFF;
+            color: #111111;
             display: inline-block;
-            width: 180px;
-            margin-bottom: 8px;
+            width: 170px;
+            margin-bottom: 6px;
         }
 
         .contact-info a {
-            color: var(--primary-glow);
+            color: var(--secondary-color);
             text-decoration: none;
-            transition: all 0.3s ease;
+            font-weight: 600;
         }
 
         .contact-info a:hover {
-            color: var(--secondary-glow);
             text-decoration: underline;
         }
 
         .footer {
-            margin-top: 60px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #EEEEEE;
             font-size: 13px;
-            color: #66666E;
+            color: #777777;
             text-align: center;
             line-height: 1.8;
         }
 
         a.privacy-link {
-            color: var(--secondary-glow);
+            color: var(--secondary-color);
             text-decoration: none;
             font-weight: 600;
         }
-        
+
         a.privacy-link:hover {
             text-decoration: underline;
         }
@@ -175,7 +183,7 @@
 
 <div class="container">
     <h1>Privacy Policy for Daly Ot Count</h1>
-    <div class="date">Last Updated: September 14, 2026</div>
+    <div class="date">Last Updated: October 23, 2026</div>
 
     <p><span class="highlight">MS Tech System</span> ("we," "our," or "us") operates the <span class="highlight">Daly Ot Count</span> mobile application (the "App"). This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our App and the choices you have associated with that data.</p>
 
@@ -186,56 +194,72 @@
 
     <h3>A. Personal Data & Profile Identity</h3>
     <ul>
-        <li><span class="highlight">No Login or Account Requirement:</span> Unlike other platforms, Daly Ot Count <span class="highlight">DO NOT require or collect Mobile Phone Numbers, Email Addresses, or Online Passwords</span> to function. The App runs entirely without requiring account registration.</li>
-        <li><span class="highlight">Custom Profile Customization:</span> The App allows you to manually input profile custom fields such as Factory/Company Name, Worker Name, Card Number, Basic Gross Salary, and Attendance Bonus Rate. This text data is stored 100% locally on your device within secure private storage (SharedPreferences).</li>
-        <li><span class="highlight">Permanent Profile Photo:</span> When you customize your profile image from the device gallery, the App utilizes a permanent local file saver engine that copies the photo into the App's protected <span class="highlight">Internal Storage</span> directory. We do not transmit or upload your photos to external cloud servers.</li>
+        <li><span class="highlight">No Login or Account Requirement:</span> Daly Ot Count <span class="highlight">DOES NOT require or collect Mobile Phone Numbers, Email Addresses, or Passwords</span> to function. The App runs entirely without requiring account registration.</li>
+        <li><span class="highlight">Custom Profile Customization:</span> The App allows you to manually input profile fields such as Factory/Company Name, Worker Name, Card Number, Basic Gross Salary, and Attendance Bonus Rate. This text data is stored 100% locally on your device (SharedPreferences).</li>
+        <li><span class="highlight">Profile Photo Storage:</span> When you customize your profile image from the device gallery, the photo is copied into the App's protected <span class="highlight">Internal Storage</span> directory. We do not transmit or upload your photos to external cloud servers.</li>
     </ul>
 
     <h3>B. Financial, Overtime & Duty Records</h3>
     <ul>
-        <li><span class="highlight">Local Database Encryption:</span> All manually input daily duty trackers, overtime (OT) hours, night bills, attendance records, and advance loan adjustments are securely stored inside an offline SQLite database local to your device.</li>
-        <li><span class="highlight">No External Synchronization:</span> Financial calculations, income projections, and salary log histories are processed directly on your device CPU. No operational data is sent to external or central servers.</li>
+        <li><span class="highlight">Local Database Encryption:</span> All daily duty trackers, overtime (OT) hours, night bills, attendance records, and advance loan adjustments are securely stored inside an offline SQLite database local to your device.</li>
+        <li><span class="highlight">No External Synchronization:</span> Financial calculations, income projections, and salary log histories are processed directly on your device CPU. No operational data is sent to central servers.</li>
     </ul>
 
-    <h3>C. Device Information</h3>
-    <p>We may also capture standard hardware data sent whenever you utilize our services, including operating system versions, device names, app configurations during background state, runtime error/crash stack traces via offline logs, and performance statistics to verify layout scaling (such as bottom bar constraint adjustments).</p>
+    <h2>2. Device Information & Technical Logs</h2>
+    <p>We may process basic non-identifiable technical data sent whenever you utilize our services, including operating system versions, device models, app performance metrics, and layout scaling adjustments to verify smooth UI operations.</p>
 
-    <h2>2. Third-Party Services & Libraries</h2>
-    <p>The App utilizes third-party core software libraries that may collect technical logs used to identify device structures. Here are the privacy policies of the third-party service providers used by the App:</p>
+    <!-- ================================================================================= -->
+    <!-- 🎯 [START OF SECTION 3: GOOGLE ADMOB POLICY - সহজে সিলেক্ট করে ডিলিট/এডিট করার জায়গা] -->
+    <!-- ================================================================================= -->
+    <h2>3. Advertising & Google AdMob Integration</h2>
+    <div class="admob-policy-box">
+        <p>This App incorporates third-party advertising services provided by <strong>Google AdMob (Google LLC)</strong> to serve advertisements. AdMob may collect and use pseudonymous device identifiers, IP addresses, and cookie data to deliver personalized or non-personalized banner and interstitial advertisements within the App.</p>
+        
+        <h3>AdMob Data Usage & Opt-Out:</h3>
+        <ul>
+            <li><strong>Advertising ID:</strong> AdMob utilizes your Android Advertising ID to display relevant ads and limit ad repetition (Frequency Capping).</li>
+            <li><strong>Personalized Ads:</strong> Depending on your device settings and user region, Google AdMob may customize ads based on your general preferences. You can opt out of personalized interest-based advertising through your Android OS settings via <code>Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization</code>.</li>
+            <li><strong>Third-Party Vendor Policy:</strong> To learn more about how Google handles user privacy and advertising data, please review the official policy link: <a href="https://policies.google.com/technologies/ads" target="_blank" class="privacy-link">Google Advertising Privacy & Terms</a>.</li>
+        </ul>
+    </div>
+    <!-- ================================================================================= -->
+    <!-- 🎯 [END OF SECTION 3: GOOGLE ADMOB POLICY] -->
+    <!-- ================================================================================= -->
+
+    <h2>4. Third-Party Libraries & Asset Credits</h2>
+    <p>The App utilizes third-party core software components and visual assets under open-source and commercial licensing agreements:</p>
     <ul>
-        <li><a href="https://google.com" target="_blank" class="privacy-link">Google Play Services Privacy Policy</a></li>
-        <!-- 🎯 [১০০% ফিক্সড ও লাইভ ভেরিফাইড - আইকন কপিরাইট প্রোটেকশন লিগ্যাল ক্রেডিট লিংকস] -->
-        <!-- Icons8 এবং Flaticon দুটির বুলেটের গতিসম্পন্ন অফিশিয়াল ক্লিকেবল লিংক এখানে নিখুঁতভাবে ইনজেক্ট করা হলো ভাইয়া! -->
+        <li><a href="https://policies.google.com/privacy" target="_blank" class="privacy-link">Google Play Services Privacy Policy</a></li>
         <li>Special visual vector assets and UI icons used in this App are sourced from and credited to <a href="https://icons8.com" target="_blank" class="privacy-link">Icons8</a> under their respective licensing terms.</li>
         <li>Additional graphic elements and design resources are created by and credited to <a href="https://icons8.com/icons" target="_blank" class="privacy-link">Flaticon</a>.</li>
     </ul>
 
-    <h2>3. Data Security & LifeCycle Execution</h2>
-    <p>The security of your overtime and financial ledger is highly important to us. The App architecture incorporates native Android lifecycle state-locks (`onResume` UI sync hooks) that dynamically reload dashboard structures in memory safely. Local preference sheets are restricted using `MODE_PRIVATE` isolation to guarantee neighboring phone applications cannot spy on or modify your personal wage logs.</p>
+    <h2>5. Data Security & Storage Isolation</h2>
+    <p>The security of your overtime and financial ledger is highly important to us. Local preference sheets and SQLite database structures are restricted using <code>MODE_PRIVATE</code> isolation to guarantee neighboring phone applications cannot access or modify your personal wage logs.</p>
 
-    <h2>4. User Rights and Data Autonomy</h2>
-    <p>We believe in full transparency and total user autonomy. Because all data is stored directly inside your device memory, you maintain full possession of your information. You can permanently wipe, clear, or delete all overtime records, profile names, and cached photos at any moment by navigating to your device OS Settings, selecting App Info for Daly Ot Count, and executing <span class="highlight">"Clear Data / Wipe Storage"</span>.</p>
+    <h2>6. User Rights & Data Wipe</h2>
+    <p>Because all data is stored directly inside your device memory, you maintain full control over your information. You can permanently wipe or delete all overtime records, profile names, and cached photos at any moment by navigating to your device OS Settings &gt; App Info for Daly Ot Count, and executing <span class="highlight">"Clear Data / Wipe Storage"</span>.</p>
 
-    <h2>5. Children's Privacy</h2>
-    <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age. In the case we discover that a child under 13 has provided us with personal information, we immediately isolate and delete this from our local internal registers.</p>
+    <h2>7. Children's Privacy</h2>
+    <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age.</p>
 
-    <h2>6. Changes to This Privacy Policy</h2>
-   
-       <!-- 🎯 [১০০% ফিক্সড ও নিখুঁত লকড কন্টাক্ট সেকশন] -->
-    <h2>7. Contact Us</h2>
-    <p>If you have any questions, suggestions, or requests regarding this Privacy Policy or your data security, do not hesitate to contact us through our official support windows:</p>
+    <h2>8. Changes to This Privacy Policy</h2>
+    <p>We may update our Privacy Policy from time to time. You are advised to review this page periodically for any changes. Modifications will be reflected by updating the "Last Updated" timestamp at the top of this document.</p>
+
+    <h2>9. Contact Us</h2>
+    <p>If you have any questions, suggestions, or requests regarding this Privacy Policy or your data security, do not hesitate to contact us through our official support channels:</p>
 
     <div class="contact-info">
         <strong>Company Name:</strong> MS Tech System<br>
         <strong>Developer Identity:</strong> MD SHAKIL MIA<br>
         <strong>Official Support Email:</strong> <a href="mailto:obujbalokshakilahmmed@gmail.com">obujbalokshakilahmmed@gmail.com</a><br>
-        <strong>Telegram Community Link:</strong> <a href="https://t.me/dalyotcount_group" target="_blank">t.me/dalyotcount_group</a>  
+        <strong>Telegram Community:</strong> <a href="https://t.me/dalyotcount_group" target="_blank">Join Telegram Group</a>
     </div>
 
     <div class="footer">
         &copy; 2026 MS Tech System. All Rights Reserved. <br>Daly Ot Count App Utility Documentation Portal.
     </div>
+</div>
 
-
-
-
+</body>
+</html>
